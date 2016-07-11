@@ -1,5 +1,9 @@
 import java.text.DecimalFormat
 
+/**
+ * Holds utility functions related to Numbers
+ * @author Utsab Neupane<utsabneupane@lftechnology.com>
+ */
 class NumberUtils {
 	/**
 	 * Parse String number into double and return default value if failed
@@ -112,21 +116,7 @@ class NumberUtils {
 		}
 		return value.toString();
 	}
-	
-	/**
-	 * calculate percentage between two values
-	 * @param newValue current value
-	 * @param oldValue previous value
-	 * @return double number
-	 * @author Utsab Neupane<utsabneupane@lftechnology.com>
-	 */
-	static Double calculatePercentage(def newValue, def oldValue){
-		if(oldValue > 0){
-			def percentage = ((newValue - oldValue) * 100)/oldValue
-			return roundDouble(percentage)
-		}
-	}
-	
+
 	/**
 	 * This function is used to parse string to long
 	 * @param number string value to be converted to long
